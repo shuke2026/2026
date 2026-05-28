@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.solarcalculator.ui.home.HomeFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_home">
+        
+        <action
+            android:id="@+id/action_home_to_calculator"
+            app:destination="@id/calculatorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            
+        <action
+            android:id="@+id/action_home_to_result"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="calculationId"
+                app:argType="long"
+                android:defaultValue="-1L" />
+        </action>
+        
+        <action
+            android:id="@+id/action_home_to_history"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/calculatorFragment"
+        android:name="com.solarcalculator.ui.calculator.CalculatorFragment"
+        android:label="@string/nav_calculator"
+        tools:layout="@layout/fragment_calculator">
+        
+        <action
+            android:id="@+id/action_calculator_to_result"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="calculationId"
+                app:argType="long"
+                android:defaultValue="-1L" />
+        </action>
+        
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.solarcalculator.ui.result.ResultFragment"
+        android:label="@string/result_title"
+        tools:layout="@layout/fragment_result">
+        
+        <argument
+            android:name="calculationId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+            
+        <action
+            android:id="@+id/action_result_to_calculator"
+            app:destination="@id/calculatorFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            
+    </fragment>
+
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="com.solarcalculator.ui.history.HistoryFragment"
+        android:label="@string/history_title"
+        tools:layout="@layout/fragment_history">
+        
+        <action
+            android:id="@+id/action_history_to_result"
+            app:destination="@id/resultFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim">
+            <argument
+                android:name="calculationId"
+                app:argType="long" />
+        </action>
+        
+    </fragment>
+
+    <fragment
+        android:id="@+id/dataFragment"
+        android:name="com.solarcalculator.ui.data.DataFragment"
+        android:label="@string/nav_data"
+        tools:layout="@layout/fragment_data" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.solarcalculator.ui.profile.ProfileFragment"
+        android:label="@string/nav_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

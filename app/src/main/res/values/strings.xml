@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">光伏发电测算工具</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">首页</string>
+    <string name="nav_calculator">测算</string>
+    <string name="nav_data">数据</string>
+    <string name="nav_profile">我的</string>
+    
+    <!-- Home Screen -->
+    <string name="welcome_title">欢迎使用光伏发电测算工具</string>
+    <string name="welcome_subtitle">专业的光伏系统收益测算与分析</string>
+    <string name="new_calculation">新建测算</string>
+    <string name="recent_calculations">最近测算</string>
+    <string name="view_all">查看全部</string>
+    <string name="empty_state_title">暂无测算记录</string>
+    <string name="empty_state_message">点击"新建测算"开始您的第一个测算</string>
+    <string name="statistics_title">统计概览</string>
+    <string name="total_calculations">测算次数</string>
+    <string name="total_capacity">总装机容量</string>
+    <string name="total_generation">年发电量</string>
+    
+    <!-- Calculator Screen -->
+    <string name="calculator_title">新建测算</string>
+    <string name="basic_info">基本信息</string>
+    <string name="capacity_label">装机容量</string>
+    <string name="city_label">安装城市</string>
+    <string name="panel_type_label">组件类型</string>
+    <string name="tilt_angle_label">安装角度</string>
+    <string name="orientation_label">朝向</string>
+    <string name="financial_info">收益参数</string>
+    <string name="system_cost_label">系统成本</string>
+    <string name="electricity_price_label">电价</string>
+    <string name="feed_in_tariff_label">上网电价</string>
+    <string name="self_consumption_label">自用电比例</string>
+    <string name="calculate">开始测算</string>
+    <string name="reset">重置</string>
+    <string name="city_hint">选择或搜索城市</string>
+    
+    <!-- Result Screen -->
+    <string name="result_title">测算结果</string>
+    <string name="generation_title">发电量分析</string>
+    <string name="revenue_title">收益分析</string>
+    <string name="payback_title">回本分析</string>
+    <string name="annual_generation">年发电量</string>
+    <string name="daily_generation">日均发电</string>
+    <string name="system_efficiency">系统效率</string>
+    <string name="annual_revenue">年收益</string>
+    <string name="total_revenue">累计收益</string>
+    <string name="net_present_value">净现值(NPV)</string>
+    <string name="payback_period">投资回收期</string>
+    <string name="internal_rate_return">内部收益率(IRR)</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="new_calculation_btn">新建测算</string>
+    <string name="monthly_generation_chart">月发电量分布</string>
+    <string name="cumulative_revenue_chart">累计收益曲线</string>
+    
+    <!-- History Screen -->
+    <string name="history_title">历史记录</string>
+    <string name="delete">删除</string>
+    <string name="delete_all">删除全部</string>
+    <string name="confirm_delete">确定删除</string>
+    <string name="confirm_delete_message">确定要删除这条记录吗？</string>
+    <string name="confirm_delete_all_message">确定要删除所有记录吗？此操作不可恢复。</string>
+    
+    <!-- Units -->
+    <string name="unit_kw">kW</string>
+    <string name="unit_kwh">kWh</string>
+    <string name="unit_yuan">元</string>
+    <string name="unit_year">年</string>
+    <string name="unit_percent">%</string>
+    <string name="unit_degree">°</string>
+    
+    <!-- Error Messages -->
+    <string name="error_invalid_input">输入数据无效，请检查</string>
+    <string name="error_calculation_failed">计算失败，请重试</string>
+    <string name="error_save_failed">保存失败，请重试</string>
+    <string name="error_load_failed">加载失败，请重试</string>
+    <string name="error_no_city">请选择城市</string>
+</resources>

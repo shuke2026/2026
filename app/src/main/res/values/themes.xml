@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.SolarCalculator" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryDark">@color/primary_green_dark</item>
+        <item name="colorPrimaryContainer">@color/primary_green_light</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/primary_blue</item>
+        <item name="colorSecondaryContainer">@color/primary_blue_light</item>
+        
+        <!-- Tertiary color -->
+        <item name="colorTertiary">@color/accent_teal</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_green_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorSurfaceVariant">@color/surface_variant</item>
+        
+        <!-- Text colors -->
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <item name="colorOnSecondary">@color/text_on_secondary</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/text_on_primary</item>
+        
+        <!-- Shape appearances -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.SolarCalculator.SmallComponent</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.SolarCalculator.MediumComponent</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.SolarCalculator.LargeComponent</item>
+    </style>
+    
+    <!-- Shape Appearances -->
+    <style name="ShapeAppearance.SolarCalculator.SmallComponent" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.SolarCalculator.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    
+    <style name="ShapeAppearance.SolarCalculator.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+    
+    <!-- Custom Card Style -->
+    <style name="Widget.SolarCalculator.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/surface</item>
+        <item name="cardElevation">2dp</item>
+        <item name="contentPadding">16dp</item>
+    </style>
+    
+    <!-- Custom Button Style -->
+    <style name="Widget.SolarCalculator.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary_green</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+    </style>
+    
+    <!-- Custom Outlined Button Style -->
+    <style name="Widget.SolarCalculator.Button.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/primary_green</item>
+        <item name="android:textColor">@color/primary_green</item>
+    </style>
+    
+    <!-- Custom Text Input Style -->
+    <style name="Widget.SolarCalculator.TextInput" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary_green</item>
+        <item name="hintTextColor">@color/primary_green</item>
+    </style>
+    
+    <!-- Custom Slider Style -->
+    <style name="Widget.SolarCalculator.Slider" parent="Widget.Material3.Slider">
+        <item name="trackColorActive">@color/primary_green</item>
+        <item name="trackColorInactive">@color/primary_green_light</item>
+        <item name="thumbColor">@color/primary_green</item>
+    </style>
+</resources>
